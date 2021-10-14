@@ -21,7 +21,7 @@ export class CompraCarro {
 
   private darDesconto(preco: number) {
     if (this.carro.getAno() < 2000) {
-      this.valorComDesconto = this.carro.getValor() * 0.9;
+      this.valorComDesconto = this.carro.getAno() * 0.9;
       this.carro.setValor(this.valorComDesconto);
     } else {
       this.carro.setValor(preco);
